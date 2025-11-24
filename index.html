@@ -1,39 +1,57 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>QuantumShikshan Pragati Foundation</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {font-family: Arial; margin:0; padding:0; background:#f5f5f5;}
-        .header {background:#1d3557; color:#fff; padding:40px; text-align:center;}
-        .section {padding:30px; max-width:700px; margin:auto;}
-        h2 {color:#1d3557;}
-        .footer {background:#1d3557; color:white; text-align:center; padding:10px; margin-top:30px;}
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuantumShiksha Pragati Foundation</title>
+  <style>
+    :root{--accent:#1d3557;--bg:#f5f5f5;--text:#222;}
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--text);}
+    header{background:var(--accent);color:#fff;padding:48px 20px;text-align:center}
+    header h1{margin:0;font-size:28px;letter-spacing:0.5px}
+    .container{max-width:900px;margin:28px auto;padding:0 18px;}
+    .card{background:#fff;border-radius:10px;padding:22px;margin-bottom:18px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    h2{color:var(--accent);margin-top:0}
+    p{line-height:1.6}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin-top:8px}
+    footer{background:#0f1720;color:#ddd;padding:18px;text-align:center;margin-top:26px;font-size:14px}
+    @media(max-width:500px){header h1{font-size:20px}}
+  </style>
 </head>
 <body>
+  <header>
+    <h1>QuantumShiksha Pragati Foundation</h1>
+    <p style="opacity:.9;margin-top:8px">Empowering education — transforming lives.</p>
+  </header>
 
-<div class="header">
-    <h1>QuantumShikshan Pragati Foundation</h1>
-    <p>Empowering Education. Transforming Lives.</p>
-</div>
+  <div class="container">
+    <div class="card">
+      <h2>About Us</h2>
+      <p>QuantumShiksha Pragati Foundation is a non-profit dedicated to improving education opportunities for underprivileged children and communities. We run learning programmes, skills workshops, and community outreach to create lasting impact.</p>
+    </div>
 
-<div class="section">
-    <h2>About Us</h2>
-    <p>QuantumShikshan Pragati Foundation is a non-profit organization dedicated to improving education opportunities for underprivileged children and communities.</p>
+    <div class="card">
+      <h2>Our Work</h2>
+      <ul>
+        <li>Free tutoring & after-school classes</li>
+        <li>Teacher training and curriculum support</li>
+        <li>Digital literacy & skills workshops</li>
+        <li>Community awareness and scholarships</li>
+      </ul>
+    </div>
 
-    <h2>Our Mission</h2>
-    <p>To provide quality education, skill development, and digital literacy programs to those who need it the most.</p>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <strong>info@quantumshiksha.org</strong></p>
+      <p>Phone: <strong>+91-7042623171</strong> (update as needed)</p>
+      <a class="cta" href="mailto:info@quantumshiksha.org">Send us an email</a>
+    </div>
+  </div>
 
-    <h2>Contact Us</h2>
-    <p>Email: contact@quantumshiksha.org</p>
-    <p>Phone: +91-7042623171</p>
-</div>
+  <footer>
+    © <span id="year"></span> QuantumShiksha Pragati Foundation — All rights reserved.
+  </footer>
 
-<div class="footer">
-    © 2025 QuantumShikshan Pragati Foundation
-</div>
-
+  <script>document.getElementById('year').textContent = (new Date()).getFullYear();</script>
 </body>
 </html>
