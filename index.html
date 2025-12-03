@@ -1,57 +1,243 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>QuantumShiksha Pragati Foundation</title>
-  <style>
-    :root{--accent:#1d3557;--bg:#f5f5f5;--text:#222;}
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--text);}
-    header{background:var(--accent);color:#fff;padding:48px 20px;text-align:center}
-    header h1{margin:0;font-size:28px;letter-spacing:0.5px}
-    .container{max-width:900px;margin:28px auto;padding:0 18px;}
-    .card{background:#fff;border-radius:10px;padding:22px;margin-bottom:18px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
-    h2{color:var(--accent);margin-top:0}
-    p{line-height:1.6}
-    .cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin-top:8px}
-    footer{background:#0f1720;color:#ddd;padding:18px;text-align:center;margin-top:26px;font-size:14px}
-    @media(max-width:500px){header h1{font-size:20px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumShiksha Pragati Foundation - Transforming Lives Through Education</title>
+    <meta name="description" content="QuantumShiksha Pragati Foundation provides free quality education, digital literacy, and skill development to underprivileged children across India.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+            width: 100%;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>QuantumShiksha Pragati Foundation</h1>
-    <p style="opacity:.9;margin-top:8px">Empowering education — transforming lives.</p>
-  </header>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center gap-3">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                </svg>
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold">QuantumShiksha Pragati Foundation</h1>
+                    <p class="text-blue-100 text-sm">Transforming Lives Through Education</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>About Us</h2>
-      <p>QuantumShiksha Pragati Foundation is a non-profit dedicated to improving education opportunities for underprivileged children and communities. We run learning programmes, skills workshops, and community outreach to create lasting impact.</p>
-    </div>
+    <!-- Hero Slideshow -->
+    <section class="relative bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="relative h-64 flex items-center justify-center">
+                <!-- Slide 1 -->
+                <div class="slide active" id="slide1">
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <svg class="w-16 h-16 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">Empowering Through Education</h2>
+                        <p class="text-xl md:text-2xl text-blue-100">Providing free quality education to underprivileged children</p>
+                    </div>
+                </div>
 
-    <div class="card">
-      <h2>Our Work</h2>
-      <ul>
-        <li>Free tutoring & after-school classes</li>
-        <li>Teacher training and curriculum support</li>
-        <li>Digital literacy & skills workshops</li>
-        <li>Community awareness and scholarships</li>
-      </ul>
-    </div>
+                <!-- Slide 2 -->
+                <div class="slide" id="slide2">
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <svg class="w-16 h-16 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">Digital Literacy for All</h2>
+                        <p class="text-xl md:text-2xl text-blue-100">Computer training and digital skills for children and adults</p>
+                    </div>
+                </div>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: <strong>info@quantumshiksha.org</strong></p>
-      <p>Phone: <strong>+91-7042623171</strong> (update as needed)</p>
-      <a class="cta" href="mailto:info@quantumshiksha.org">Send us an email</a>
-    </div>
-  </div>
+                <!-- Slide 3 -->
+                <div class="slide" id="slide3">
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <svg class="w-16 h-16 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">Skill Development Programs</h2>
+                        <p class="text-xl md:text-2xl text-blue-100">Vocational training for employment and entrepreneurship</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Slide Indicators -->
+            <div class="flex justify-center gap-2 mt-8">
+                <button onclick="showSlide(0)" class="w-3 h-3 rounded-full bg-white transition-all" id="indicator0"></button>
+                <button onclick="showSlide(1)" class="w-3 h-3 rounded-full bg-blue-300 transition-all" id="indicator1"></button>
+                <button onclick="showSlide(2)" class="w-3 h-3 rounded-full bg-blue-300 transition-all" id="indicator2"></button>
+            </div>
 
-  <footer>
-    © <span id="year"></span> QuantumShiksha Pragati Foundation — All rights reserved.
-  </footer>
+            <!-- Navigation Buttons -->
+            <button onclick="previousSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 rounded-full p-2 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 rounded-full p-2 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
 
-  <script>document.getElementById('year').textContent = (new Date()).getFullYear();</script>
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">About Our Foundation</h2>
+                <div class="bg-blue-50 rounded-lg p-8 shadow-md">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        QuantumShiksha Pragati Foundation is dedicated to providing free and quality education to underprivileged and economically weaker section children, especially those from slums, rural, and tribal areas. We believe education is the foundation for breaking the cycle of poverty and creating opportunities for a better future.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Registered under Section 8 of the Companies Act, 2013, our foundation operates across India with a mission to empower communities through education, digital literacy, and skill development programs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Initiatives -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Key Initiatives</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Quality Education</h3>
+                    <p class="text-gray-600">Establishing schools, learning centers, and libraries focused on basic education, digital education, and life skills for underprivileged children.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Digital Literacy</h3>
+                    <p class="text-gray-600">Providing computer training and digital skills to children and adults, enabling them to become self-reliant in the digital age.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Skill Development</h3>
+                    <p class="text-gray-600">Organizing vocational training programs in tailoring, data entry, digital marketing, and spoken English for employment opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">What We Offer</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex gap-4">
+                        <div class="text-blue-600 mt-1 text-xl">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Scholarships & Resources</h4>
+                            <p class="text-gray-600">Books, uniforms, digital devices, and educational resources for deserving students</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-blue-600 mt-1 text-xl">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Career Counseling</h4>
+                            <p class="text-gray-600">Personality development and interview training for students and job seekers</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-blue-600 mt-1 text-xl">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Employment Support</h4>
+                            <p class="text-gray-600">Job placement assistance and micro-entrepreneurship opportunities</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-blue-600 mt-1 text-xl">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Community Outreach</h4>
+                            <p class="text-gray-600">Workshops and campaigns to promote education and skill development awareness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-2">QuantumShiksha Pragati Foundation</h3>
+                <p class="text-gray-400 mb-4">Registered under Section 8, Companies Act 2013</p>
+                <p class="text-gray-400 mb-2">Registered Office: Uttar Pradesh, India</p>
+                <p class="text-gray-400 text-sm">© 2025 QuantumShiksha Pragati Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('[id^="indicator"]');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => {
+                ind.classList.remove('bg-white', 'w-8');
+                ind.classList.add('bg-blue-300', 'w-3');
+            });
+           
+            slides[index].classList.add('active');
+            indicators[index].classList.remove('bg-blue-300', 'w-3');
+            indicators[index].classList.add('bg-white', 'w-8');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance slides
+        setInterval(nextSlide, 4000);
+    </script>
 </body>
 </html>
