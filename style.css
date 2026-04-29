@@ -8,7 +8,7 @@ body {
 
 /* MAIN WRAPPER */
 .site {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   background: white;
 }
@@ -69,4 +69,44 @@ section {
   .impact-container {
     flex-direction: column;
   }
+}
+/* ===== NAVBAR FIX ===== */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.nav-btn.active {
+  background: rgba(255,255,255,0.3);
+}
+
+.nav-cta {
+  background: #F59E0B;
+  color: #1E3A8A;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-logo {
+  font-weight: bold;
+}
+
+.nav-logo span {
+  color: #F59E0B;
 }
