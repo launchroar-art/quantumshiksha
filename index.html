@@ -491,3 +491,15 @@ function selectAmt(el){
 </body>
 
 </html>
+<script>
+function show(pageId) {
+
+  // hide all pages
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+  });
+
+  // show selected page
+  document.getElementById('pg-' + pageId).classList.add('active');
+}
+</script>
