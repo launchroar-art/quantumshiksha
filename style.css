@@ -1,0 +1,45 @@
+/* RESET */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 0;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  padding: 80px 60px;
+}
+
+/* IMPACT SECTION */
+.impact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .impact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
