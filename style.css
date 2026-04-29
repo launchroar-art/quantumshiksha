@@ -1,4 +1,6 @@
-/* RESET */
+body {
+  background-color: red !important;
+}/* RESET */
 body {
   margin: 0;
   padding: 0;
