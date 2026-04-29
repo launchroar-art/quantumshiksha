@@ -233,3 +233,10 @@ section {
     width: 100%;
   }
 }
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
